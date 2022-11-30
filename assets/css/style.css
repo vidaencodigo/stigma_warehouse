@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url('../images/bg.jpg') no-repeat center;
+    background-size: auto;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content,
+.form,
+.login,
+.controls {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content {
+    /* conten is a main container of web app in loging
+        allows centered the content login form */
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*
+Login card
+*/
+.login {
+    gap: 2em;
+}
+
+.login {
+    color: #fff;
+    min-width: 350px;
+    max-width: 450px;
+    width: 100%;
+    
+    height: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    /* glassmorphism */
+    background: rgba(255, 255, 255, .1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
+}
+
+.title--login {
+    text-align: center;
+}
+
+.title--login h3 {
+    font-size: 28px;
+}
+
+.form {
+    gap: 1em;
+    font-size: 18px;
+}
+
+.controls {
+    gap: .5em;
+}
+
+.input--control::placeholder {
+    color: #f3f3f3;
+}
+
+.input--control {
+    width: 100%;
+    background: rgba(255, 255, 255, .3);
+    border: 1px solid transparent;
+    outline: none;
+    color: #fff;
+    padding: 15px 20px;
+    font-style: 17px;
+    font-weight: 700;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.input--control:focus {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.controls--helper a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.primary {
+    background-color: #239023;
+    color: #fff;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.primary:hover {
+    background-color: #28a428;
+}
+
+.primary:active {
+    background-color: #1e7b1e;
+}
+
