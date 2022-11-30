@@ -1,7 +1,7 @@
-# SUNNY CF
+# STIGMA
 
 ### Description
-Proyecto web del curso profesional de PHP en codigo facilito
+STIGMA warehouse
 
 ### Author
 Emmanuel Lucio Urbina
