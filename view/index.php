@@ -113,7 +113,7 @@
                         <div class="card--body">
 
                             <h3>
-                                Hoy entraron 300 productos en total
+                                Hoy entraron <?=$total_entries->suma || 0 ?> productos en total
                             </h3>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                         <div class="card--body">
 
                             <h3>
-                                Hoy entraron 70 productos en total
+                                Hoy salieron <?=$total_salidas->suma?> productos en total
                             </h3>
                         </div>
                     </div>

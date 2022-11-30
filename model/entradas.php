@@ -37,4 +37,16 @@ class Entradas extends Crud
     public function update()
     {
     }
+
+    public function get_total(){
+      /** RETORNA TODOS LOS ELEMENTOS DE LA TABLAS */
+      try {
+        //code...
+        $stm = $this->pdo->prepare("SELECT sum(quantity) as suma FROM ". self::TABLE);
+        $stm->execute();
+        return $stm->fetch(PDO::FETCH_OBJ);
+      } catch (\PDOException $e) {
+        echo $e->getMessage();
+      }
+    }
 }
