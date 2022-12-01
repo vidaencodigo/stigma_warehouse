@@ -104,7 +104,9 @@
                                     <th>Nombre</th>
                                     <th>Precio compra</th>
                                     <th>% Ganancia</th>
+                                    <!-- 
                                     <th>Impuesto agregado</th>
+                                    -->
                                     <th>SubTotal</th>
                                     <th>Total con impuestos</th>
                                     <th>Acciones</th>
@@ -131,9 +133,11 @@
                                             <td>
                                                 <?= $producto->percent_gain ?>%
                                             </td>
+                                            <!--
                                             <td>
                                                 <?= $producto->taxes ?>%
                                             </td>
+                                            -->
                                             <td>
                                                 <?= round($subtotal, 2) ?>
                                             </td>
